@@ -5,10 +5,7 @@ namespace TiendaServicios.API.CarritoCompra.Persistencia
 {
     public class CarritoContexto : DbContext
     {
-        public CarritoContexto(DbContextOptions<CarritoContexto> options) : base(options)
-        {
-            
-        }
+        public CarritoContexto(DbContextOptions<CarritoContexto> options) : base(options) { }
 
         public DbSet<CarritoSesion> CarritoSesion { get; set; }
         public DbSet<CarritoSesionDetalle> CarritoSesionDetalle { get; set; }
